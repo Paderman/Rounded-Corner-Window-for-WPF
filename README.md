@@ -1,2 +1,2 @@
-# WPF_Rounded_corner_window
-WPF Rounded Corner Window (C# &amp; VB)
+# WPF Rounded Corner Window
+For C# &amp; VB
