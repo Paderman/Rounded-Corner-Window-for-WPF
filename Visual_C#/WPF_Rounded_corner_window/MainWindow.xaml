@@ -14,7 +14,9 @@
         </Border.BorderBrush>
         <Grid>
             <Grid Margin="0,47,0,0">
-                <Label Content="Text - Text - Text - Text - Text - Text" Foreground="White" />
+                <TextBlock
+                    Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                    Foreground="White" TextWrapping="Wrap" />
             </Grid>
             <Border x:Name="TitleDrawBar" CornerRadius="25,15,0,0" Background="Black" Margin="-8,-8,-8,391.333"
                     VerticalAlignment="Top" MinHeight="50" UseLayoutRounding="False"
