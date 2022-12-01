@@ -1,0 +1,73 @@
+﻿<Application x:Class="Application"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!-- Source / Quelle: stackoverflow.com/a/45373109 -->
+        <ControlTemplate TargetType="Button" x:Key="ButtonTemplateDefault">
+            <Border Name="RootElement">
+                <Border.Background>
+                    <SolidColorBrush x:Name="BorderBrush" Color="Black" />
+                </Border.Background>
+
+                <Grid>
+                    <Grid.Background>
+                        <SolidColorBrush x:Name="ButtonBackground" Color="Black" />
+                    </Grid.Background>
+                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Margin="4,5,4,4" />
+                </Grid>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="MouseOver">
+                            <Storyboard>
+                                <ColorAnimation Storyboard.TargetName="ButtonBackground"
+                                                Storyboard.TargetProperty="Color" To="Gray" />
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Pressed">
+                            <Storyboard>
+                                <ColorAnimation Storyboard.TargetName="ButtonBackground"
+                                                Storyboard.TargetProperty="Color" To="Gray" />
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </Border>
+        </ControlTemplate>
+
+        <ControlTemplate TargetType="Button" x:Key="ButtonTemplateRed">
+            <Border Name="RootElement">
+                <Border.Background>
+                    <SolidColorBrush x:Name="BorderBrush" Color="Black" />
+                </Border.Background>
+
+                <Grid>
+                    <Grid.Background>
+                        <SolidColorBrush x:Name="ButtonBackground" Color="Black" />
+                    </Grid.Background>
+                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Margin="4,5,4,4" />
+                </Grid>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="MouseOver">
+                            <Storyboard>
+                                <ColorAnimation Storyboard.TargetName="ButtonBackground"
+                                                Storyboard.TargetProperty="Color" To="Red" />
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Pressed">
+                            <Storyboard>
+                                <ColorAnimation Storyboard.TargetName="ButtonBackground"
+                                                Storyboard.TargetProperty="Color" To="Red" />
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </Border>
+        </ControlTemplate>
+    </Application.Resources>
+</Application>
